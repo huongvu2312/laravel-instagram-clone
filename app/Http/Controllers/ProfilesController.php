@@ -11,7 +11,9 @@ class ProfilesController extends Controller
     public function index(User $user)
     {
         //$user = User::findOrFail($user);
-        return view('profiles.index', compact('user'));
+        // check if user is logged in and is followed this profile
+        $follows = (auth()->user()) ? auth()->user()->following->contains($user->id) : false;
+        return view('profiles.index', compact('user', 'follows'));
     }
 
     public function edit(User $user)
