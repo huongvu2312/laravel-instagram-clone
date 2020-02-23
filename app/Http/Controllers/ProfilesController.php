@@ -35,6 +35,8 @@ class ProfilesController extends Controller
 
             $image = Image::make(public_path("storage/{$imagePath}"))->fit(1000, 1000);
             $image->save();
+        } else {
+            $imagePath = $user->profile->image;
         }
 
         auth()->user()->profile->update(array_merge(
@@ -42,6 +44,6 @@ class ProfilesController extends Controller
             ['image' => $imagePath]
         ));
 
-        return redirect("/profiles/{$user->id}");
+        return redirect("/profile/{$user->id}");
     }
 }
