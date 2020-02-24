@@ -2,9 +2,11 @@
 
 namespace App;
 
+use App\Mail\NewUserWelcomeMail;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Mail;
 
 class User extends Authenticatable
 {
@@ -16,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'username', 'email', 'password',
+        'name', 'email', 'username', 'password',
     ];
 
     /**
@@ -45,12 +47,13 @@ class User extends Authenticatable
             $user->profile()->create([
                 'title' => $user->username,
             ]);
+            Mail::to($user->email)->send(new NewUserWelcomeMail());
         });
     }
 
-    public function profile()
+    public function posts()
     {
-        return $this->hasOne(Profile::class);
+        return $this->hasMany(Post::class)->orderBy('created_at', 'DESC');
     }
 
     public function following()
@@ -58,8 +61,8 @@ class User extends Authenticatable
         return $this->belongsToMany(Profile::class);
     }
 
-    public function posts()
+    public function profile()
     {
-        return $this->hasMany(Post::class)->orderBy('created_at', 'DESC');
+        return $this->hasOne(Profile::class);
     }
 }
