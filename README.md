@@ -12,7 +12,7 @@ None
 In the project directory, you can run:
 
 `php artisan serve`
-<br />
+
 Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
 ## Build with
@@ -28,7 +28,7 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
 ## Live action
 
-![Instagram_Clone GIF]()
+![Instagram_Clone GIF](https://media.giphy.com/media/Vc55FMKMJIzMVrGl5f/giphy.gif)
 
 ## License
 
