@@ -26,7 +26,7 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 * Post new image and caption
 * Follow other users
 
-## Live action
+## Live demo
 
 ![Instagram_Clone GIF](https://media.giphy.com/media/Vc55FMKMJIzMVrGl5f/giphy.gif)
 
