@@ -1,5 +1,4 @@
 # Laravel Instagram Clone <img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"> <a href="https://snyk.io/test/github/huongvu2312/laravel-instagram-clone?targetFile=composer.lock"><img src="https://snyk.io/test/github/huongvu2312/laravel-instagram-clone/badge.svg?targetFile=composer.lock" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/huongvu2312/laravel-instagram-clone?targetFile=composer.lock" style="max-width:100%;"></a>
-
 A simple [laravel](https://laravel.com/) application based on instagram UI.
 
 ## Getting Started
