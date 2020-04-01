@@ -1,4 +1,5 @@
-# Laravel Instagram Clone <img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License">
+# Laravel Instagram Clone <img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"> <a href="https://snyk.io/test/github/huongvu2312/laravel-instagram-clone?targetFile=package.json"><img src="https://snyk.io/test/github/huongvu2312/laravel-instagram-clone/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/huongvu2312/laravel-instagram-clone?targetFile=package.json" style="max-width:100%;"></a>
+
 A simple [laravel](https://laravel.com/) application based on instagram UI.
 
 ## Getting Started
@@ -26,7 +27,7 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 * Post new image and caption
 * Follow other users
 
-## Live action
+## Live demo
 
 ![Instagram_Clone GIF](https://media.giphy.com/media/Vc55FMKMJIzMVrGl5f/giphy.gif)
 
